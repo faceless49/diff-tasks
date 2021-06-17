@@ -45,7 +45,7 @@ function HW4() {
             checked={checked}
             onChangeChecked={setChecked}
           >
-            some text {/*// этот текст попадёт в children*/}
+            Forgot {/*// этот текст попадёт в children*/}
           </SuperCheckbox>
 
           {/*// onChange тоже должен работать*/}
@@ -56,21 +56,20 @@ function HW4() {
             default
           </SuperButton>
 
+          <SuperButton disabled>
+            disabled
+          </SuperButton>
+
           <SuperButton
             red // пропсу с булевым значением не обязательно указывать true
             onClick={showAlert}
           >
             delete {/*// название кнопки попадёт в children*/}
           </SuperButton>
-
-          <SuperButton disabled>
-            disabled
-          </SuperButton>
         </div>
       </div>
 
       {/*----------------------------------------------------*/}
-
 
 
       <hr/>
