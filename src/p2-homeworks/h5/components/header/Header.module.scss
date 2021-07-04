@@ -1,0 +1,59 @@
+.menu {
+  background-color: #f58a5a;
+  padding: 35px;
+  color: #ffffff;
+  font-size: 20px;
+  position: relative;
+
+  &_list {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -274px;
+    list-style: none;
+
+    &:hover {
+      left: 0;
+      transition: left 0.5s;
+    }
+
+    .menu_item {
+      &:hover a:before {
+        width: 50%;
+        transform: translateX(100%);
+      }
+
+      + .menu_item {
+        margin-left: 15px;
+
+      }
+
+      .menu_link {
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          content: "";
+          width: 0px;
+          height: 3px;
+          background-color: #0aa566;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          transition: 0.5s;
+        }
+
+        &:hover:before {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .menuBurgerInFuture {
+      background-color: blueviolet;
+      padding: 10px;
+    }
+  }
+}
