@@ -1,7 +1,4 @@
-.someClass {
-
-}
-
+@import './../sass/variables';
 
 .form {
 
@@ -16,19 +13,19 @@
     font-size: 14px;
     user-select: none;
     color: #fff;
-    background: blueviolet;
+    background: $thirdColor;
     border: 0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     transition: all 200ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-      background-color: #16db47;
+      background-color: $secondaryColor;
       box-shadow: 0 6px 8px -3px rgba(0, 0, 0, 0.3);
     }
   }
 
   .error {
-    color: tomato;
+    color: $errorColor;
   }
 }

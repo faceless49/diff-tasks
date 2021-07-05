@@ -1,3 +1,6 @@
+@import "./../sass/variables";
+
+
 .message {
     display: flex;
     max-width: 300px;
@@ -34,7 +37,7 @@
 .title {
     margin: 0;
     padding: 0;
-    color: blueviolet;
+    color: $thirdColor;
     font-size: 15px;
 }
 

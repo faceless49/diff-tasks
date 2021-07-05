@@ -1,3 +1,5 @@
+@import './../sass/variables';
+
 .affair {
   display: flex;
   justify-content: space-between;
@@ -5,12 +7,12 @@
 
   .btn {
     color: #ffffff;
-    background-color: blueviolet;
+    background-color: $thirdColor;
     cursor: pointer;
 
     &:hover {
       transition: background-color 0.2s;
-      background-color: #16db47;
+      background-color: $secondaryColor;
     }
   }
 }

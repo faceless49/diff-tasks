@@ -1,7 +1,9 @@
+@import "./../../../sass/variables";
+
 .menu {
-  background-color: #f58a5a;
+  background-color: $mainColor;
   padding: 35px;
-  color: #ffffff;
+  color: $textColor;
   font-size: 20px;
   position: relative;
 
@@ -15,10 +17,11 @@
 
     &:hover {
       left: 0;
-      transition: left 0.5s;
+      transition: left 0.6s;
     }
 
     .menu_item {
+
       &:hover a:before {
         width: 50%;
         transform: translateX(100%);
@@ -26,7 +29,6 @@
 
       + .menu_item {
         margin-left: 15px;
-
       }
 
       .menu_link {
@@ -35,11 +37,12 @@
         z-index: 1;
         color: #fff;
 
+
         &:before {
           content: "";
           width: 0px;
           height: 3px;
-          background-color: #0aa566;
+          background-color: $secondaryColor;
           position: absolute;
           top: 100%;
           left: 0;
@@ -50,10 +53,13 @@
           transform: scale(1);
         }
       }
+      .menu_activeLink {
+        color: $thirdColor;
+      }
     }
 
     .menuBurgerInFuture {
-      background-color: blueviolet;
+      background-color: $thirdColor;
       padding: 10px;
     }
   }
