@@ -21,9 +21,6 @@ function HW4() {
 
   return (
     <div>
-      <hr/>
-      homeworks 4
-
       <div className={s.column}>
         <h3 className={s.title}>Get over here</h3>
         <SuperInputText
@@ -68,16 +65,6 @@ function HW4() {
           </SuperButton>
         </div>
       </div>
-
-      {/*----------------------------------------------------*/}
-
-
-      <hr/>
-      {/*для личного творчества, могу проверить*/}
-      {/*<AlternativeSuperInputText/>*/}
-      {/*<AlternativeSuperButton/>*/}
-      {/*<AlternativeSuperCheckbox/>*/}
-      <hr/>
     </div>
   )
 }

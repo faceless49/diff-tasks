@@ -1,5 +1,5 @@
 import React, {KeyboardEvent} from 'react';
-import s from './Greeting.module.css'
+import s from './Greeting.module.scss'
 
 type GreetingPropsType = {
   name: string // need to fix any
@@ -17,15 +17,15 @@ const Greeting: React.FC<GreetingPropsType> = (
   const inputClass = error ? s.error : s.form_input      // need to fix with (?:)
 
   return (
-    <div>
+    <div className={s.form}>
       <input value={name}
              onChange={setNameCallback}
              className={inputClass}
              onKeyPress={onKeyPressHandler}
              onBlur={setNameCallback}
       />
-      <span>{error}</span>
-      <button onClick={addUser} disabled={!name}>add</button>
+      <span className={s.error}>{error}</span>
+      <button className={s.btn} onClick={addUser} disabled={!name}>add</button>
       <span>{totalUsers}</span>
     </div>
   )

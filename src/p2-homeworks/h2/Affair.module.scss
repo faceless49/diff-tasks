@@ -1,11 +1,13 @@
 .affair {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
+  padding: 5px 0;
 
   .btn {
     color: #ffffff;
     background-color: blueviolet;
-			cursor: pointer;
+    cursor: pointer;
+
     &:hover {
       transition: background-color 0.2s;
       background-color: #16db47;
