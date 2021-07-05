@@ -1,0 +1,12 @@
+.affair {
+
+
+  .btn {
+    background-color: blueviolet;
+    &:hover {
+      transition: background-color 0.2s;
+      background-color: #16db47;
+    }
+  }
+}
+

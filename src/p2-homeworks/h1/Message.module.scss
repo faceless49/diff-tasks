@@ -1,7 +1,5 @@
 .message {
-    background-color: lightgreen;
     display: flex;
-
     max-width: 300px;
     padding: 5px;
     align-items: flex-end;
@@ -15,7 +13,7 @@
 }
 
 .dialog_wrapper {
-    background-color: darkgray;
+    background-color: rgb(22, 219, 71);
     min-width: 150px;
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -29,7 +27,7 @@
     left: -40px;
     width: 50px;
     height: 30px;
-    background: radial-gradient(circle at top left, transparent 70%, darkgray 60%);
+    background: radial-gradient(circle at top left, transparent 70%, rgb(22, 219, 71) 60%);
 }
 
 
