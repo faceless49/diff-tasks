@@ -32,7 +32,7 @@ function Affairs(props: AffairsPropsType) {
   };
 
   return (
-    <section className={s.affairs}>
+    <div className={s.affairs_inner}>
       {mappedAffairs}
       <div className={s.filter_wrap}>
         <button className={s.btn} onClick={setAll}>
@@ -48,7 +48,7 @@ function Affairs(props: AffairsPropsType) {
           Low
         </button>
       </div>
-    </section>
+    </div>
   );
 }
 

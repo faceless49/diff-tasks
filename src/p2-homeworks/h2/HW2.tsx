@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Affairs from "./Affairs";
-import s from "./Hw2.module.scss";
+import s from "./HW2.module.scss";
 // types
 export type AffairPriorityType = "high" | "low" | "middle";
 export type AffairType = {

@@ -33,6 +33,7 @@
         text-decoration: none;
         position: relative;
         z-index: 1;
+        color: #fff;
 
         &:before {
           content: "";
@@ -48,6 +49,7 @@
         &:hover:before {
           transform: scale(1);
         }
+
       }
     }
 
