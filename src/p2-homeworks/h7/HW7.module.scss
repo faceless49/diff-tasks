@@ -1,0 +1,14 @@
+@import './../sass/variables';
+
+.homework_task {
+  background-color: $secondaryColor;
+  .homework_inner {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #fff;
+    border: 1px solid white;
+    border-radius: 3px;
+    text-align: left;
+  }
+}
