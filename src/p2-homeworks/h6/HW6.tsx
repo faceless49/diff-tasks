@@ -21,13 +21,15 @@ function HW6() {
       <h2 className={s.title}>SuperEditableSpan with localStorage</h2>
       <div className={s.span_wrapper}>
 
-        <FontAwesomeIcon
-          className={s.icon}
-          icon={faEdit}/>
+
         <SuperEditableSpan
           value={value}
           onChangeText={setValue}
-          spanProps={{children: value ? undefined : 'Enter text...'}}
+          spanProps={{
+            children: value
+              ? undefined
+              : 'Enter text'
+          }}
         />
       </div>
       <div className={s.button_wrapper}>

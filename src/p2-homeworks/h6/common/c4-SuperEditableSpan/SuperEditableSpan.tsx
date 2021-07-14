@@ -1,7 +1,8 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from 'react'
 import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText'
 import s from './SuperEditableSpan.module.scss';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faEdit} from '@fortawesome/free-regular-svg-icons';
 
 
 // тип пропсов обычного инпута
@@ -63,15 +64,20 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
             {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
           />
         ) : (
-          <span
-            onDoubleClick={onDoubleClickCallBack}
-            className={spanClassName}
+          <div className={s.superSpan_wrap}>
+            <FontAwesomeIcon
+              className={s.icon}
+              icon={faEdit}/>
+            <span
+              onDoubleClick={onDoubleClickCallBack}
+              className={spanClassName}
 
-            {...restSpanProps}
-          >
+              {...restSpanProps}
+            >
                         {/*если нет захардкодженного текста для спана, то значение инпута*/}
-            {children || restProps.value}
+              {children || restProps.value}
             </span>
+          </div>
         )
       }
     </>

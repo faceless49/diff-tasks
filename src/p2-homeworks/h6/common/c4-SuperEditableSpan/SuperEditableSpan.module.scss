@@ -1,8 +1,23 @@
-.superSpan {
-  position: relative;
-  color: white;
-  padding: 0 15px;
+
+.superSpan_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .superSpan {
+    position: relative;
+    color: white;
+    padding: 0 15px;
+
+  }
+
 }
+
 .superInput {
   color: red;
 }
