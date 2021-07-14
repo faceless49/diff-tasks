@@ -1,7 +1,9 @@
 .superSpan {
   position: relative;
-  &:after {
-
-  }
-
+  color: white;
+  padding: 0 15px;
 }
+.superInput {
+  color: red;
+}
+
