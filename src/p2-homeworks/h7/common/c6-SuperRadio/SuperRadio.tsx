@@ -27,6 +27,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
   const mappedOptions: any[] = options ? options.map((o, i) => (
     <label className={s.label} key={name + '-' + i}>
       <input
+
         className={s.input}
         type={'radio'}
         name={o.name}
@@ -41,9 +42,9 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
   )) : []
 
   return (
-    <>
+    <div className={s.wrapper}>
       {mappedOptions}
-    </>
+    </div>
   )
 }
 

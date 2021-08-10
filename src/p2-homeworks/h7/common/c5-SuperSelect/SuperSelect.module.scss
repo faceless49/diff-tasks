@@ -1,0 +1,13 @@
+@import './../../../sass/variables';
+
+
+.select {
+  width: 150px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background: $secondaryColor;
+  option {
+    font-size: 15px;
+  }
+}

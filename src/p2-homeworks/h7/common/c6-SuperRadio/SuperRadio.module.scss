@@ -1,55 +1,24 @@
 @import "./../../../sass/variables";
 
-input[type=radio] {
-  display: none;
-}
-
-.active-label {
-  color: $thirdColor;
-
-  &:before {
-    background: white;
-    border-color: $thirdColor;
+.wrapper {
+  display: flex;
+  .label {
+    cursor: pointer;
   }
-}
-
-.label {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1;
-  cursor: pointer;
-  display: block;
-  padding: 1rem 1rem 1rem 3rem;
-  position: relative;
-  border-top: 1px solid rgba(black, .1);
-  background: white;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: all .15s ease;
-
-  &:focus,
-  &:hover,
-  &:active {
-    @extend .active-label;
-  }
-
-  &:first-of-type {
-    border: 0;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    width: 16px;
-    height: 16px;
+  .input {
+    appearance: none;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    border: .2rem solid #ccc;
+    background: #c8aacc;
+
+    &:checked, &:hover, &:focus {
+      background: $thirdColor;
+    }
   }
 }
 
-.input:checked + label:before {
-  background: red;
-}
+
+
+
 

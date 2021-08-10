@@ -2,13 +2,17 @@
 
 .homework_task {
   background-color: $secondaryColor;
+  .title {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
   .homework_inner {
-    width: 100%;
     max-width: 400px;
     margin: 2rem auto;
-    background: #fff;
-    border: 1px solid white;
     border-radius: 3px;
-    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
