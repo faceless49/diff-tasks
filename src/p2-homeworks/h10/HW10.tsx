@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {loadingAC} from './bll/loadingReducer';
 import {AppStoreType} from './bll/store';
 import {Loader} from './loader/Loader';
-
+import s from './HW10.module.scss'
 function HW10() {
   const dispatch = useDispatch()
   const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
@@ -20,15 +20,13 @@ function HW10() {
     console.log('loading...')
   };
   return (
-    <div>
-      <hr/>
-      homeworks 10
-      {/*should work (должно работать)*/}
+    <div className={s.wrapper}>
+  
       {isLoading
         ? (
           <div><Loader/></div>
         ) : (
-          <div>
+          <div className={s.loader}>
             <SuperButton onClick={setLoading}>set loading...</SuperButton>
           </div>
         )

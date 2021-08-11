@@ -1,0 +1,12 @@
+.clock_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.string_time {
+  height: 50px;
+}
+.string_date {
+  height: 25px;
+}

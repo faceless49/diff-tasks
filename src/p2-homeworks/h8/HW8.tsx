@@ -42,8 +42,6 @@ function HW8() {
         <div><SuperButton onClick={sortDown}>sortDown</SuperButton></div>
         <div><SuperButton onClick={check}>check</SuperButton></div>
       </div>
-
-
     </div>
   )
 }
