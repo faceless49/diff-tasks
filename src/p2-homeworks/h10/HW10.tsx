@@ -5,6 +5,7 @@ import {loadingAC} from './bll/loadingReducer';
 import {AppStoreType} from './bll/store';
 import {Loader} from './loader/Loader';
 import s from './HW10.module.scss'
+
 function HW10() {
   const dispatch = useDispatch()
   const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
@@ -21,7 +22,7 @@ function HW10() {
   };
   return (
     <div className={s.wrapper}>
-  
+
       {isLoading
         ? (
           <div><Loader/></div>
