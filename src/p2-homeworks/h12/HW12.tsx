@@ -17,15 +17,14 @@ function HW12() {
   const changeTheme = (theme: string) => ({ type: theme } as const);
 
   const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-    debugger;
     dispatch(changeTheme(e.currentTarget.value));
   };
 
   return (
     <div className={s[theme.theme]}>
+      {/*Смущает здесь theme.theme, похоже с чем то ошибся?*/}
       <hr />
       <span className={s[theme + "-text"]}>homeworks 12</span>
-
       {/*should work (должно работать)*/}
       {/*SuperSelect or SuperRadio*/}
       <SuperSelect onChange={onChangeCallback} options={themes} />
@@ -33,5 +32,5 @@ function HW12() {
     </div>
   );
 }
-// * TODO: HW on help.
+
 export default HW12;

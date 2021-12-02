@@ -3,11 +3,13 @@ import { changeThemeType } from "../HW12";
 const initState = {
   theme: "some",
 };
-// type InitStateType = ReturnType<typeof initState>;
+type InitStateType = typeof initState;
 
-export const themeReducer = (state = initState, action: changeThemeType) => {
+export const themeReducer = (
+  state = initState,
+  action: changeThemeType
+): InitStateType => {
   // fix any
-  debugger;
   switch (action.type) {
     case "some": {
       return { ...state, theme: action.type };
